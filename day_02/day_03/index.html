@@ -27,7 +27,7 @@
         const ball =document.getElementById("ball");
         document.addEventListener('keydown', handleKeyPress);
         let position = 0;
-       
+       let yposition = 0;
         function handleKeyPress(event) {
             if(event.code === 'ArrowRight') {
                 position = position + 20
@@ -38,7 +38,15 @@
                 ball.style.left = position + "px";
         
         }
+        else if (event.code === 'ArrowUp') {
+                yposition = yposition - 20
+                ball.style.top = yposition + "px";
     }
+    else if (event.code === 'ArrowDown') {
+                yposition = yposition + 20
+                ball.style.top = yposition + "px";
+}
+        }
     </script>
 
 </body>
