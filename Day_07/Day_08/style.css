@@ -9,19 +9,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-optical-sizing: auto;
+  font-family: 'Inter', sans-serif;
+  font-size: normal;
 }
 
 .counter-wrapper {
   display: grid;
   grid-template-columns: 107px 107px;
-  column-gap: 30px;
-  row-gap: 30px;
+  grid-template-rows: 85px 85px;
+  gap: 30px;
 }
 
 button,
 .label {
   font-size: 96px;
   line-height: 85px;
+  text-align: center;
 }
 
 button {
